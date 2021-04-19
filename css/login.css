@@ -1,41 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/poppins-v15-latin-regular.woff);
+}
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 
-section
-{
+
+section {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-section .imgBx{
+section .imgBx {
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-section .imgBx:before{
+section .imgBx:before {
     content: '';
-    position:  absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(225deg, #af62ae, #03a9f4 );
+    background: linear-gradient(225deg, #af62ae, #03a9f4);
     z-index: 1;
     mix-blend-mode: screen;
-
 }
 
-section .imgBx img{
+section .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,7 +45,7 @@ section .imgBx img{
     object-fit: cover;
 }
 
-section .contentBx{
+section .contentBx {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,11 +53,11 @@ section .contentBx{
     height: 100%;
 }
 
-section .contentBx .formBx{
+section .contentBx .formBx {
     width: 50%;
 }
 
-section .contentBx .formBx h2{
+section .contentBx .formBx h2 {
     color: #607d8b;
     font-weight: 600;
     text-transform: uppercase;
@@ -67,11 +68,11 @@ section .contentBx .formBx h2{
     letter-spacing: 1px;
 }
 
-section .contentBx .formBx .inputBx{
+section .contentBx .formBx .inputBx {
     margin-bottom: 20px;
 }
 
-section .contentBx .inputBx span{
+section .contentBx .inputBx span {
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
@@ -81,12 +82,12 @@ section .contentBx .inputBx span{
     letter-spacing: 1px;
 }
 
-section .contentBx .formBx .inputBx input{
+section .contentBx .formBx .inputBx input {
     width: 100%;
     padding: 10px 20px;
     outline: none;
     font-weight: 400;
-    border: 1px solid  #607d8b;
+    border: 1px solid #607d8b;
     font-size: 16px;
     letter-spacing: 1px;
     color: #607d8b;
@@ -94,7 +95,7 @@ section .contentBx .formBx .inputBx input{
     border-radius: 30px;
 }
 
-section .contentBx .formBx .inputBx input[type="submit"]{
+section .contentBx .formBx .inputBx input[type="submit"] {
     background: #af62ae;
     color: #fff;
     outline: none;
@@ -103,52 +104,52 @@ section .contentBx .formBx .inputBx input[type="submit"]{
     cursor: pointer;
 }
 
-section .contentBx .formBx .inputBx input[type="submit"]:hover{
+section .contentBx .formBx .inputBx input[type="submit"]:hover {
     background: #9b509a;
     transition: 1s;
 }
 
-section .contentBx .formBx .remember{
+section .contentBx .formBx .remember {
     margin-bottom: 10px;
     color: #607d8b;
     font-weight: 400;
     font-size: 14px;
 }
 
-section .contentBx .formBx .inputBx p{
+section .contentBx .formBx .inputBx p {
     color: #607d8b;
 }
 
-section .contentBx .formBx .inputBx p a{
+section .contentBx .formBx .inputBx p a {
     color: #af62ae;
     text-decoration: none;
 }
 
-section .contentBx .formBx .inputBx p a:hover{
+section .contentBx .formBx .inputBx p a:hover {
     color: #9b509a;
     transition: 0.5s;
 }
 
-section .contentBx .formBx h3{
+section .contentBx .formBx h3 {
     color: #607d8b;
     text-align: center;
     margin: 80px 0 10px;
     font-weight: 500;
 }
 
-section .contentBx .formBx .social{
+section .contentBx .formBx .social {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section .contentBx .formBx .social li img{
+section .contentBx .formBx .social li img {
     width: 25px;
     height: 25px;
     filter: invert(100%);
 }
 
-section .contentBx .formBx .social li{
+section .contentBx .formBx .social li {
     list-style: none;
     width: 50px;
     height: 50px;
@@ -161,20 +162,19 @@ section .contentBx .formBx .social li{
     cursor: pointer;
 }
 
-section .contentBx .formBx .social li:hover{
+section .contentBx .formBx .social li:hover {
     background: #af62ae;
 }
 
-@media (max-width: 768px){
-    section .imgBx{
+@media (max-width: 768px) {
+    section .imgBx {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
     }
-
-    section .contentBx{
+    section .contentBx {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,20 +182,16 @@ section .contentBx .formBx .social li:hover{
         height: 100%;
         z-index: 1;
     }
-
-    section .contentBx .formBx{
+    section .contentBx .formBx {
         background: rgb(255 255 255 / 0.9);
         width: 100%;
         margin: 50px;
         padding: 40px;
     }
-
-    section .contentBx .formBx h3{
+    section .contentBx .formBx h3 {
         color: #607d8b;
         text-align: center;
         margin: 30px 0 10px;
         font-weight: 500;
     }
 }
-
-
